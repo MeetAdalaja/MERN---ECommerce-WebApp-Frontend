@@ -76,8 +76,11 @@ const Dashboard = () => {
                 <div className="revenue-chart">
                   <h2>Revenue & Transaction</h2>
                   <BarChart
-                    data_1={stats.chart.revenue}
-                    data_2={stats.chart.order}
+                    // data_1={stats.chart.revenue}
+                    // data_2={stats.chart.order}
+                    data_1={[232234, 300334, 175352, 232411, 321211, 234121, 328902, 257977, 158452, 479763, 267393, 326323]}
+                    data_2={[1333, 4131, 6376, 7464, 2345, 4687, 2393, 1211, 6988, 7777, 6998, 8770]}
+                    labels={["Jan", "Feb", "March", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"]}
                     title_1="Revenue"
                     title_2="Transaction"
                     bgColor_1="rgb(0, 115, 255)"

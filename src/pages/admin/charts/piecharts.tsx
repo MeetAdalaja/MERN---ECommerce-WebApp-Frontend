@@ -19,7 +19,7 @@ const PieCharts = () => {
   const ageGroup = data?.charts.usersAgeGroup!;
   const adminCustomer = data?.charts.adminCustomer!;
 
-  if (isError) return <Navigate to={"/admin/dashboard"}/>
+  if (isError) return <Navigate to={"/admin/dashboard"} />
 
 
 
@@ -38,9 +38,9 @@ const PieCharts = () => {
                     labels={["Processing", "Shipped", "Delivered"]}
                     data={[order.Processing, order.Shipped, order.Delivered]}
                     backgroundColor={[
-                      `hsl(110,80%, 80%)`,
-                      `hsl(110,80%, 50%)`,
-                      `hsl(110,40%, 50%)`,
+                      `hsl(348, 52%, 51%)`,
+                      `hsl(223, 51%, 66%)`,
+                      `hsl(82, 26%, 43%)`,
                     ]}
                     offset={[0, 0, 50]}
                   />
@@ -55,9 +55,8 @@ const PieCharts = () => {
                     data={categories.map((i) => Object.values(i)[0])}
                     backgroundColor={categories.map(
                       // (i) => `hsl(${i.value * 4}, ${i.value}%, 50%)`
-                      (i) => `hsl(${Object.values(i)[0] * Math.random() * 4}, ${Object.values(i)[0]}%, 50%)`
+                      (i) => `hsl(${Object.values(i)[0] * Math.random() * 100}, ${Object.values(i)[0] * Math.random() * 15}%, 50%)`
                     )}
-                    legends={false}
                     offset={[0, 0, 0, 80]}
                   />
                 </div>
@@ -70,7 +69,6 @@ const PieCharts = () => {
                     labels={["In Stock", "Out Of Stock"]}
                     data={[stock.inStock, stock.outOfStock]}
                     backgroundColor={["hsl(269,80%,40%)", "rgb(53, 162, 255)"]}
-                    legends={false}
                     offset={[0, 80]}
                     cutout={"70%"}
                   />
@@ -101,7 +99,6 @@ const PieCharts = () => {
                       "hsl(300,80%,40%)",
                       "rgb(53, 162, 255)",
                     ]}
-                    legends={false}
                     offset={[20, 30, 20, 30, 80]}
                   />
                 </div>
@@ -118,9 +115,9 @@ const PieCharts = () => {
                     ]}
                     data={[ageGroup.teen, ageGroup.adult, ageGroup.old]}
                     backgroundColor={[
-                      `hsl(10, ${80}%, 80%)`,
-                      `hsl(10, ${80}%, 50%)`,
-                      `hsl(10, ${40}%, 50%)`,
+                      `hsl(281, 63%, 73%)`,
+                      `hsl(360, 63%, 73%)`,
+                      `hsl(223, 12%, 74%)`,
                     ]}
                     offset={[0, 0, 50]}
                   />

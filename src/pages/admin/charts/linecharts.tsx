@@ -43,7 +43,8 @@ const Linecharts = () => {
             <>
               <section>
                 <LineChart
-                  data={users}
+                  // data={users}
+                  data={[4, 2, 2, 1, 1, 5, 1, 2, 4, 6, 4, 8]}
                   label="Users"
                   borderColor="rgb(53, 162, 255)"
                   labels={months}
@@ -54,7 +55,8 @@ const Linecharts = () => {
 
               <section>
                 <LineChart
-                  data={products}
+                  // data={products}
+                  data={[10, 11, 11, 22, 11, 16, 12, 23, 43, 23, 53, 11]}
                   backgroundColor={"hsla(269,80%,40%,0.4)"}
                   borderColor={"hsl(269,80%,40%)"}
                   labels={months}
@@ -65,7 +67,8 @@ const Linecharts = () => {
 
               <section>
                 <LineChart
-                  data={revenue}
+                  // data={revenue}
+                  data={[232234, 300334, 175352, 232411, 321211, 234121, 328902, 257977, 158452, 479763, 267393, 326323]}
                   backgroundColor={"hsla(129,80%,40%,0.4)"}
                   borderColor={"hsl(129,80%,40%)"}
                   label="Revenue"
@@ -76,7 +79,8 @@ const Linecharts = () => {
 
               <section>
                 <LineChart
-                  data={discount}
+                  // data={discount}
+                  data={[600, 500, 1000, 4999, 3322, 6433, 7213, 8000, 4322, 6000, 9000, 10200,]}
                   backgroundColor={"hsla(29,80%,40%,0.4)"}
                   borderColor={"hsl(29,80%,40%)"}
                   label="Discount"

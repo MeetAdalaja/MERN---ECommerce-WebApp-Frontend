@@ -139,7 +139,7 @@ export const DoughnutChart = ({
         display: legends,
         position: "bottom",
         labels: {
-          padding: 40,
+          padding: 10,
         },
       },
     },
@@ -154,12 +154,14 @@ interface PieChartProps {
   data: number[];
   backgroundColor: string[];
   offset?: number[];
+  legends?: boolean;
 }
 export const PieChart = ({
   labels,
   data,
   backgroundColor,
   offset,
+  legends = true
 }: PieChartProps) => {
   const pieChartData: ChartData<"pie", number[], string> = {
     labels,
@@ -177,7 +179,11 @@ export const PieChart = ({
     responsive: true,
     plugins: {
       legend: {
-        display: false,
+        display: legends,
+        position: "bottom",
+        labels: {
+          padding: 5,
+        },
       },
     },
   };
